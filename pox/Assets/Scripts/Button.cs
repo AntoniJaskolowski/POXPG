@@ -6,9 +6,11 @@ public class Button : MonoBehaviour
 {
     public bool btn;
     public BoxCollider2D collider;
+    public Animator anim;
     public void Start()
     {
         collider = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
@@ -18,6 +20,9 @@ public class Button : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         btn = true;
+        
+
+            anim.SetTrigger("open");
         
     }
 

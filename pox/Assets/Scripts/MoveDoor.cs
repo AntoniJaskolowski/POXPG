@@ -15,7 +15,7 @@ public class MoveDoor : MonoBehaviour
     void Update()
     {
         if (btn.btn) {
-            transform.position = new Vector2(20, 0);
+            transform.position = new Vector2(2000, 0);
         }
     }
 }
